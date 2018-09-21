@@ -21,7 +21,7 @@ exports.write = (ctx) => {
 
     postId += 1; // 기존 postId 값에 1을 더합니다.
 
-    const post = { id, postId, title, body };
+    const post = { id: postId, title, body };
     posts.push(post);
     ctx.body = post;
 };
